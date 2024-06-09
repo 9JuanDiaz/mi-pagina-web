@@ -23,7 +23,7 @@ jobs:
 
     - name: Deploy to Surge
       env:
-        SURGE_LOGIN: ${{ secrets.SURGE_LOGIN }}
+        SURGE_DOMAIN: ${{ secrets.SURGE_DOMAIN }}
         SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
         SURGE_URL: https://mipaginaproyecto.surge.sh/
       run: surge C:/Users/DELL/mi-pagina-web ${{ env.SURGE_URL }}
